@@ -14,7 +14,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 15px 90px;
-  background-color: #00050d;
+  background-color: transparent;
 }
 
 .nav-logo img {
@@ -26,15 +26,6 @@ nav {
   gap: 40px;
   justify-content: center;
   align-items: center;
-}
-
-.nav-left a {
-  text-decoration: none;
-  color: white;
-}
-
-.nav-left a:hover {
-  color: black;
 }
 
 .nav-left li {
@@ -110,114 +101,44 @@ nav {
   background-color: white;
 }
 
-#hero {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-}
-
-.container-left {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding: 100px;
-  /* flex: 1; */
-}
-
-.container-left h1 {
-  font-size: 3rem;
-}
-
-.container-left h4 {
-  font-size: 18px;
-}
-
-.container-left button {
-  width: 228px;
-  height: 62px;
-  background-color: white;
-  color: black;
-  font-size: 20px;
-  border: none;
-  border-radius: 10px;
-}
-
-.container-right {
-  /* flex: 1; */
-}
-
-.container-right img {
-  object-fit: cover;
-  object-position: top right;
-  height: 650px;
-  width: 100%;
-  display: block;
-}
-
-#hero-3 {
-  display: flex;
-  background-color: #00050d;
-  justify-content: center;
-  /* align-items: center; */
-}
-
-.container3-left {
-  padding: 100px;
-}
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 10px;
-  margin: 40px;
-}
-
-.gallery-container img {
-  width: 280px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.container3-left {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.container3-left h1 {
-  font-size: 3rem;
-}
-
-.container3-left h4 {
-  font-size: 18px;
-}
-
-.footer-container {
-  background-color: #222222;
-}
-
-.footer-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 10px;
+  flex: 1;
 }
 
-.footer-container img {
-  height: 35px;
-  margin-top: 25px;
+.container-left {
+  padding: 85px;
+  display: inline-block;
+  position: relative;
 }
 
-.terms {
-  display: flex;
-  gap: 12px;
-  margin: 8px;
-  color: #79b8f3;
+.container-left img {
+  height: 280px;
 }
 
-.copy {
-  margin-bottom: 20px;
-  color: #8197a4;
+.container-right img {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top right;
+  /* display: block; */
+}
+
+.movies-number {
+  color: #37f1a3;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 5px;
+}
+
+.movie-para h4 {
+  position: absolute;
+  font-size: 18px;
+  display: none;
+}
+
+.container-left:hover .movie-para h4 {
+  display: block;
 }

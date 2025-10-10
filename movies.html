@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prime Video</title>
+    <title>Movies</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="movie.css" />
   </head>
   <body>
     <header>
@@ -20,10 +20,10 @@
           <li class="nav-logo">
             <img src="./asset/nav-logo.png" alt="logo" />
           </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="./movies.html">Movies</a></li>
-          <li><a href="#">Tv Shows</a></li>
-          <li><a href="#">Live Tv</a></li>
+          <li>Home</li>
+          <li>Movies</li>
+          <li>Tv Shows</li>
+          <li>Live Tv</li>
           <li>|</li>
           <li>
             <img
@@ -31,7 +31,7 @@
               class="svg-icon"
               alt="subscribe"
             />
-            <a href="#">Subscription</a>
+            Subscription
           </li>
         </ul>
         <ul class="nav-right">
@@ -90,63 +90,32 @@
       </nav>
     </header>
     <main>
-      <section id="hero">
+      <div class="container">
         <div class="container-left">
-          <h1>Welcome to Prime Video</h1>
-          <h4>
-            Join Prime to watch the latest movies, TV shows and award-winning
-            Amazon Originals
-          </h4>
-          <button>Sign in to join prime</button>
-        </div>
-        <div class="container-right">
-          <img src="./asset/hero1.jpg" alt="hero-image" />
-        </div>
-      </section>
-      <section id="hero">
-        <div class="container-left">
-          <h1>Movie rentals on Prime Video</h1>
-          <h4>Early Access to new movies, before digital subscription</h4>
-          <button>Rent now</button>
-        </div>
-        <div class="container-right">
-          <img src="./asset/hero2.jpg" alt="hero-image2" />
-        </div>
-      </section>
-      <section id="hero-3">
-        <div class="container3-left">
-          <h1>Your favorite subscriptions all in one place</h1>
-          <h4>
-            Customers can subscribe to get access to a variety of premium and
-            specialty content, easily <br />
-            accessible within the Prime Video app
-          </h4>
-        </div>
-        <div class="container3-right">
-          <div class="gallery-container">
-            <img src="./asset/image-gallery/1.jpg" alt="1" />
-            <img src="./asset/image-gallery/2.jpg" alt="2" />
-            <img src="./asset/image-gallery/3.jpg" alt="3" />
-            <img src="./asset/image-gallery/4.jpg" alt="4" />
-            <img src="./asset/image-gallery/5.jpg" alt="5" />
-            <img src="./asset/image-gallery/6.jpg" alt="6" />
-            <img src="./asset/image-gallery/7.jpg" alt="7" />
-            <img src="./asset/image-gallery/8.jpg" alt="8" />
-            <img src="./asset/image-gallery/9.jpg" alt="9" />
+          <img src="./asset/movieName.webp" alt="movieName" />
+          <p class="movies-number">#10 in india</p>
+          <div class="movie-para">
+            <h4>
+              Deva goes undercover to infiltrate a dangerous gang, investigating
+              the truth behind his friend's mysterious death.
+            </h4>
           </div>
+          <button>
+            Join Prime <br />
+            Watch now
+          </button>
+          <button class="plus">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+
+          <button class="detail">
+            <i class="fa-solid fa-circle-info"></i>
+          </button>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <img src="./asset/footer-logo.png" alt="footer-logo" />
-        <div class="terms">
-          <p>Terms and Privacy Notice</p>
-          <p>Send us feedback</p>
-          <p>Help</p>
+        <div class="container-right">
+          <img src="./asset/movie.webp" alt="movie" />
         </div>
-        <p class="copy">&copy 1996-2025, Amazon.com, Inc. or its affiliates</p>
       </div>
-    </footer>
+    </main>
   </body>
 </html>
